@@ -1,0 +1,92 @@
+:root {
+  --cor-primary: #623996;
+  --cor-button: #be85bb;
+  --cor-secundary: #913e97;
+}
+
+h2 {
+  color: var(--cor-primary);
+}
+
+.intro-conteudo,
+.beneficios-conteudo,
+.footer-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/*========== HEADER ==========*/
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/*========= MAIN ==========*/
+.intro-bg {
+  background-image: url(./image/back-top.png);
+  background-color: var(--cor-primary);
+  color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.vetor1 {
+  background-color: #ffffff;
+  border-radius: 50px 50px 0 0;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.vetor1 img {
+  width: 15px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/*========== Principais Benefícios do ANSd ==========*/
+.beneficios {
+  background-image: url(./image/back-main.png);
+  background-color: var(--cor-primary);
+  color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*========== FOOTER ==========*/
+.footer-container {
+  background-image: url(./image/back-footer.png);
+  background-color: var(--cor-primary);
+  color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 0;
+  padding-right: 0;
+}
