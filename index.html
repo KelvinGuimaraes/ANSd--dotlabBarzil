@@ -17,13 +17,13 @@
 
   <body>
     <!--========== HEADER ==========-->
-    <header class="header-container">      
+    <header class="header-container container">      
       <a href="./index.html">
-        <img src="./image/logo icon.png" alt="Logo ANSd" class="logo">
-        <img src="./image/logo.png" alt="Logo ANSd" class="logo" />          
+        <img src="./image/LogoAnsd.svg" alt="Logo ANSd" class="logo">
+        <img src="./image/Ansd.svg" alt="Logo ANSd" class="logo" />          
       </a>
 
-      <nav>
+      <nav class="nav-container">
         <ul class="menu-list">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#funcionalidades">Funcionalidades</a></li>
@@ -33,41 +33,59 @@
       </nav>
     </header>
 
+    <span class="fundo-box-shadow"></span>
+
     <!--========== MAIN ==========-->
     <main class="container">
       <div class="intro-bg">
         
-        <div class="intro-conteudo">
-          <h1>Transformando a avaliação neurológica da hanseníase no Brasil</h1>
-          <p>O ANSd moderniza a Avaliação Neurológica Simplificada, preserva dados clínicos essenciais e fortalece o cuidado ao paciente e a tomada de decisão profissional.</p>
+          <div class="intro-conteudo container">
+            <h1>Transformando a avaliação neurológica da hanseníase no Brasil</h1>
+            <p>O ANSd moderniza a Avaliação Neurológica Simplificada, preserva dados clínicos essenciais e fortalece o cuidado ao paciente e a tomada de decisão profissional.</p>
 
-          <a class="conheca" href="#">Conheça o ANSd</a>
-          <a class="previw" href="#">Quero demonstração <img src="./image/icons/Subtract.png"></a>
-        </div>
+            <div class="intro-botao">
+              <button class="conheca" href="#">Conheça o ANSd</button>
+              <button class="preview" href="#">Quero demonstração <img src="./image/icons/Subtract.png"></button>
+            </div>
+          </div>
 
-        <div class="vetor1"><img src="./image/icons/Vector.png"></div>
+          <div class="intro-logo"><img src="/image/ANSD-main.svg" alt=""></div>
+
+          <div class="vetor1"><img src="./image/icons/Vector.png"></div>
+
       </div>
 
       <!--========== Os Obstáculos da Avaliação ==========-->
       <section id="sobre" class="obs-avalia">
-        <h2>Os Obstáculos da Avaliação</h2>
-        <p>A Avaliação Neurológica Simplificada ainda depende de registros em papel, o que dificulta o acompanhamento clínico e prejudica o monitoramento da hanseníase no Brasil.</p>
-        
-        <div class="obs-cards">
-          <div class="obs-span">
-            <span class="trigger" data-target="conteudo-registro"><img src="./image/icons/registro.png"> Registros em papel geram perda de informações</span>
-            <span class="trigger" data-target="conteudo-padronizacao"><img src="./image/icons/padrao.png"> Falta de padronização limita decisões clínicas</span>
+
+        <div class="obs-intro">
+          <h2>Os Obstáculos da Avaliação</h2>
+          <p>A Avaliação Neurológica Simplificada ainda depende de registros em papel, o que dificulta o acompanhamento clínico e prejudica o monitoramento da hanseníase no Brasil.</p>
+        </div>
+
+        <div class="cards-container">
+
+          <div class="cards">
+
+            <div class="card-texto">
+
+              <div class="card-titulo">
+                <span class="card-img">
+                  <img src="./image/icons/registro.png">
+                </span>
+                 Registros em papel geram perda de informações
+              </div>
+
+              <p>A ANS continua sendo <bold>documentada majoritariamente em formulários físicos. Isso leva à perda de dados</bold> por desgaste do papel, marcações que desbotam com o tempo e alterações na interpretação das anotações.</p>
+
+              <p>Além disso, os registros ficam isolados em cada unidade de saúde, <bold>impedindo uma visão contínua da evolução do paciente e prejudicando diagnósticos e intervenções mais precisas.</bold></p>
+            </div>
+
+            
+
           </div>
 
-          <p id="conteudo-registro" class="obs-conteudo">
-            A ANS continua sendo <bold>documentada majoritariamente em formulários físicos. Isso leva à perda de dados</bold> por desgaste do papel, marcações que desbotam com o tempo e alterações na interpretação das anotações.</br>
-            Além disso, os registros ficam isolados em cada unidade de saúde, <bold>impedindo uma visão contínua da evolução do paciente e prejudicando diagnósticos e intervenções mais precisas.</bold>
-          </p>
 
-          <p id="conteudo-padronizacao" class="obs-conteudo">
-            Sem digitalização, não há padronização efetiva das avaliações, <bold>o que dificulta análises longitudinais, comparação de casos e uso dos dados para gestão pública.</bold></br>
-            A ausência de registros estruturados compromete o acompanhamento de incapacidades, <bold>limita pesquisas e impede que gestores e profissionais tenham acesso rápido e confiável às informações necessárias para ações de vigilância e tomada de decisão.</bold>
-          </p>
         </div>
         
         <!--========== O que é a ANSd ==========-->

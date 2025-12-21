@@ -17,23 +17,77 @@ h2 {
 }
 
 /*========== HEADER ==========*/
+
 .header-container {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  height: 213px;
+  padding: 50px 0px 0px 0px;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1000;
 }
 
-.header-container nav {
+.header-container a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  gap: 40px;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 29px 0px 0px 15px;
+  gap: 23px;
+}
+
+nav ul li a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--cor-primary);
+}
+
+.demonstra {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-primary);
+  border-radius: 25px;
+}
+
+.demonstra a {
+  padding: 7px 19px;
+  display: inline-flex;
+  color: #ffffff;
+  gap: 5px; 
+  align-items: center;
+}
+
+.fundo-box-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 230px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 6px 6px #00000026;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 100;
 }
 
 /*========= MAIN ==========*/
 .intro-bg {
+  display: flex;
+  flex-direction: row;
   background-image: url(./image/back-top.png);
   background-color: var(--cor-primary);
   color: #ffffff;
@@ -41,27 +95,185 @@ h2 {
   background-size: cover;
   background-position: center;
   width: 100vw;
+  height: 666px;
   margin-left: calc(-50vw + 50%);
   padding-left: 0;
   padding-right: 0;
+  z-index: 1;
+}
+
+.intro-conteudo {
+  width: 43%;
+  padding: 90px 0px 0px 100px;
+}
+
+.intro-botao {
+  display: flex;
+  width: 100%;
+}
+
+.intro-conteudo h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.intro-conteudo p{
+  font-size: 1.5rem;
+}
+
+.conheca {
+  width: 280px;
+  padding: 15px 10px;
+  background-color: var(--cor-button);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 20px 10px 0px 0px;
+}
+
+.preview {
+  width: 280px;
+  padding: 15px 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.preview img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .vetor1 {
+  position: absolute;
+  left: 50%;
+  bottom: -150px;
   background-color: #ffffff;
-  border-radius: 50px 50px 0 0;
-  width: 50px;
-  height: 20px;
+  border-radius: 50px 50px 10px 10px;
+  width: 120px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+}
+
+.vetor1::before,
+.vetor1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.vetor1::before {
+  left: -20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 0 0 0 white; /* Cria a curva externa */
+}
+
+.vetor1::after {
+  right: -20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -10px 0 0 0 white; /* Cria a curva externa */
 }
 
 .vetor1 img {
-  width: 15px;
+  width: 35px;
   height: 35px;
   object-fit: contain;
 }
+
+
+.intro-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.obs-intro {
+  margin-top: 100px;
+  gap: 80px;
+}
+
+.obs-intro h1 {
+  color: var(--cor-primary);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.obs-intro p {
+  color: #2F2F2F;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 0px;
+}
+
+.cards {
+  display: flex;
+  width: 560px;
+  height: 528px;
+  background-color: #913e97;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-texto {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 40px 50px;
+  color: #ffffff;
+  gap: 20px;
+}
+
+.card-titulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 10px 0px;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  gap: 15px;
+}
+
+.card-titulo img {
+  width: 27px;
+  height: 27px;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #623996;
+}
+
+.card-texto p {
+  font-size: 1.1rem;
+}
+
+.card-texto p bold{
+  font-weight: 700;
+}
+
 
 /*========== Principais Benefícios do ANSd ==========*/
 .beneficios {
