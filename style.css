@@ -509,17 +509,21 @@ nav ul li a {
 }
 
 /*========== Principais Benefícios do ANSd ==========*/
-.beneficios {
-  background-image: url(./image/back-main.png);
-  background-color: var(--cor-primary);
-  color: #ffffff;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding-left: 0;
-  padding-right: 0;
+
+.beneficios-conteudo {
+  position: relative;
+}
+
+.simbolo-roxo-1 {
+  position: absolute;
+  top: 95px;
+  left: -150px;
+}
+
+.simbolo-roxo-2 {
+  position: absolute;
+  bottom: 140px;
+  right: -150px;
 }
 
 .beneficios-seta {
@@ -536,6 +540,86 @@ nav ul li a {
   bottom: 20px;
   right: 49%;
   z-index: 2;
+}
+
+.beneficios {
+  background-color: var(--cor-primary);
+  color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.beneficios-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  z-index: 4;
+}
+
+.beneficios-texto h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.beneficios-texto p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.list-deducao {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.list-topic {
+  position: relative;
+}
+
+.list-topic::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.list-topic::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -36px;
+  width: 4px;
+  height: 90px;
+  background-color: #ffffff;
+}
+
+.list-topic h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.list-topic p {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 /*========== FOOTER ==========*/
