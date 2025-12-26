@@ -516,14 +516,15 @@ nav ul li a {
 
 .simbolo-roxo-1 {
   position: absolute;
-  top: 95px;
+  top: 310px;
   left: -150px;
 }
 
 .simbolo-roxo-2 {
   position: absolute;
-  bottom: 140px;
+  bottom: 298px;
   right: -150px;
+  z-index: 0;
 }
 
 .beneficios-seta {
@@ -549,6 +550,7 @@ nav ul li a {
   background-size: cover;
   background-position: center;
   width: 100vw;
+  height: 1045px;
   margin-left: calc(-50vw + 50%);
   padding-left: 0;
   padding-right: 0;
@@ -561,6 +563,7 @@ nav ul li a {
   gap: 40px;
   position: relative;
   z-index: 4;
+  padding-bottom: 40px;
 }
 
 .beneficios-texto h2 {
@@ -576,19 +579,24 @@ nav ul li a {
 }
 
 .list {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 20px;
+  z-index: 4;
+  gap: 100px;
 }
 
 .list-deducao {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .list-topic {
   position: relative;
+  width: 450px;
 }
 
 .list-topic::before {
@@ -608,8 +616,12 @@ nav ul li a {
   top: 20px;
   left: -36px;
   width: 4px;
-  height: 90px;
+  height: 120%;
   background-color: #ffffff;
+}
+
+.list-deducao .list-topic:last-child::after {
+  display: none;
 }
 
 .list-topic h3 {
@@ -620,6 +632,29 @@ nav ul li a {
 .list-topic p {
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.s-video-wrap {
+  background-position: center;
+  background-size: cover;
+  background-image: url(image/video-bg.png);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 601px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 12px;
+}
+
+.s-video-wrap {
+  align-items: center;
+}
+
+.s-video-content {
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
 /*========== FOOTER ==========*/
