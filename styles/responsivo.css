@@ -1,0 +1,135 @@
+:root {
+  --cor-primary: #623996;
+  --cor-button: #be85bb;
+  --cor-secundary: #913e97;
+}
+
+/* ===== HEADER ===== */
+@media (max-width: 1000px) {
+  .header-container {
+    margin-top: -80px;
+    margin-bottom: -50px;
+  }
+
+  .fundo-box-shadow {
+    height: 100px;
+  }
+
+  .header-container img {
+    width: 70px;
+    height: auto;
+  }
+
+  .demonstra {
+    position: relative;
+    margin-left: -15px;
+    width: 140px;
+    height: 35px;
+    padding: 5px;
+  }
+  .demonstra img {
+    width: 20px;
+  }
+
+  .menu-list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    top: -20px;
+  }
+
+  .nav-container a {
+    font-size: 0.8rem;
+    margin-left: -10px;
+    color: #fff;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .nav-container.active {
+    display: block !important;
+    position: absolute;
+    background: var(--cor-secundary);
+
+    padding: 30px;
+    top: 170px; /* Ajuste para mover o menu mais para cima */
+    right: 10px;
+    width: 150px;
+    height: 200px;
+    
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-out;
+    text-align: start;
+  }
+
+  .nav-container.active::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 35px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--cor-secundary);
+  }
+
+  .nav-container.active li a {
+    color: #fff;
+  }
+
+  .nav-container.active li {
+    margin-top: 8px;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-primary);
+    border: none;
+    z-index: 300;
+    cursor: pointer;
+    position: relative;
+    margin-left: 100px;
+  }
+
+  .menu-button:hover {
+    transition: 0.2s;
+    background: var(--cor-secundary);
+  }
+
+  .menu-button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2px;
+    width: 15px;
+    background: #fff;
+    box-shadow: 0 6px #fff, 0 -6px #fff; /* Espaçamento entre as linhas (6px) */
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MAIN ===== */
+@media (max-width: 1000px) {
+  
+}
