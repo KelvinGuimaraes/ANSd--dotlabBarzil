@@ -719,6 +719,97 @@ nav ul li a {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
+/*========== Hansen.ai ==========*/
+
+.hansen-sobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hansen-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hansen-texto h2 {
+  color: var(--cor-primary);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.hansen-texto p {
+  font-size: 1.5rem;
+  color: #2F2F2F;
+  font-weight: 500;
+}
+
+.hansen-texto button {
+  width: 260px;
+  height: 58px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--cor-primary);
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+.hansen-texto button:hover {
+  background-color: var(--cor-secundary);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.hansen-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hansen-cuidado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 180px 0px 100px 0px;
+  gap: 80px;
+}
+
+.hansen-cuidado h2 {
+  color: var(--cor-primary);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.hansen-cuidado p {
+  font-size: 1.5rem;
+  color: #2F2F2F;
+  font-weight: 500;
+}
+
+.hansen-cuidado button {
+  width: 360px;
+  height: 75px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--cor-primary);
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+.hansen-cuidado button:hover {
+  background-color: var(--cor-secundary);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
 /*========== FOOTER ==========*/
 .footer-container {
   background-image: url(./image/back-footer.png);
