@@ -819,7 +819,90 @@ nav ul li a {
   background-size: cover;
   background-position: center;
   width: 100vw;
+  height: 698px;
   margin-left: calc(-50vw + 50%);
   padding-left: 0;
   padding-right: 0;
+}
+
+.footer-conteudo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-conteudo img {
+  width: 145px;
+  height: 145px;
+}
+
+.footer-colunas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.contato-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 46px;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.contatos, .links h3{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.contato-list li a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.contato-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links-list a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.contato-list .insta{
+  width: 32px;
+  height: 32px;
+}
+
+.contato-list .email{
+  width: 31px;
+  height: 25px;
+}
+
+.footer-conteudo span {
+  display: flex;
+  margin-top: 90px;
 }
