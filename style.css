@@ -431,15 +431,27 @@ nav ul li a {
   align-items: center;
 }
 
-.header-card span.numero{
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 900;
-  margin-bottom: 20px;
+.numero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  color: #FFFFFF !important;
+  font-size: 1.25rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.numero:before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
-  width: 39px;
-  height: 39px;
-  background-color: var(--cor-primary);
+  background-color: #623996;
+  z-index: 1;
 }
 
 .header-card h3 {
