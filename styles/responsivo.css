@@ -438,6 +438,33 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .hansen-cuidado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .hansen-cuidado h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: -60px;
+  }
+
+  .hansen-cuidado p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .hansen-cuidado .solicite {
+    margin-top: -50px;
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
 /*===== FOOTER =====*/
 @media (max-width: 1000px) {
   .footer-container {
