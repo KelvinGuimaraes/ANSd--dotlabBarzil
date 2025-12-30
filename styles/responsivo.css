@@ -34,6 +34,7 @@
   .menu-list {
     display: flex;
     flex-wrap: wrap;
+    max-width: 10px;
     gap: 10px;
     position: relative;
     top: -20px;
@@ -161,7 +162,7 @@
   }
 
   .intro-conteudo p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 20px;
   }
@@ -328,7 +329,114 @@
   }
 }
 
+/*========== Funcionalidades Principais ==========*/
+@media (max-width: 1000px) {
+  .funcionalidades {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+    margin-top: -50px;
+  }
 
+  .funcionalidades h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .funcion-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-funcion {
+    max-width: 300px;
+    height: 150px;
+    text-align: start;
+  }
+
+  .card-conteudo{
+    padding: 10px;
+    max-width: 300px;
+    height: 100px;
+  }
+  .card-conteudo p {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  
+  .header-card {
+    align-items: start;
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .header-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+/*========== Para Quem o ANSd é Indicado ==========*/
+@media (max-width: 1000px) {
+  .praquem {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+    margin-top: -10px;
+  }
+
+  .praquem h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: -50px;
+  }
+
+  .praq-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .praq-card {
+    max-width: 300px;
+    height: auto;
+    text-align: start;
+  }
+
+  .praq-card-conteudo p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .praq-header-card {
+    display: flex;              
+    flex-direction: row;        
+    align-items: center;        
+    justify-content: flex-start;
+    gap: 10px;                  
+    margin-top: 10px;;
+  }
+
+  .praq-header-card img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;             
+  }
+
+  .praq-header-card h3 {
+    font-size: 1rem;
+    margin: 0;                 
+    line-height: 1.2rem;
+  }
+
+  .praq-img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+}
 
 /*===== FOOTER =====*/
 @media (max-width: 1000px) {
