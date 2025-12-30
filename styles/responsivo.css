@@ -596,6 +596,7 @@ html, body {
   .aplicativo-texto p {
     font-size: 1rem;
     line-height: 1.6rem;
+    text-align: start;
   }
 
   /* ===== CARROSSEL ===== */
@@ -628,9 +629,51 @@ html, body {
   }
 }
 
+/*========== Demonstração do Aplicativo ==========*/
+@media (max-width:1000px) {
+  .hansen-sobre {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .hansen-texto {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .hansen-texto h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hansen-texto p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .hansen-texto button {
+    width: 220px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .hansen-img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hansen-img img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+}
 
 @media (max-width: 1000px) {
   .hansen-cuidado {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
