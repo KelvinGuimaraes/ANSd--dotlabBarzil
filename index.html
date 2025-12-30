@@ -18,7 +18,7 @@
   <body>
     <!--========== HEADER ==========-->
     <header class="header-container container">      
-      <a href="./index.html">
+      <a href="#inicio">
         <img src="./image/LogoAnsd.svg" alt="Logo ANSd" class="logo">
         <img src="./image/Ansd.svg" alt="Logo ANSd" class="logo" />          
       </a>
@@ -30,8 +30,8 @@
       <nav class="nav-container">
         <ul class="menu-list">
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#funcionalidades">Funcionalidades</a></li>
-          <li><a href="#contato">Para quem é</a></li>
+          <li><a href="#Funcionalidades">Funcionalidades</a></li>
+          <li><a href="#praquem">Para quem é</a></li>
           <li><a href="#hansen.ai">hansen.ai</a></li>
           <li class="demonstra"><a href="#demonstracao">Demonstração <img class="seta" src="./image/icons/Subtract.png"></a></li>
       </nav>
@@ -41,7 +41,7 @@
 
     <!--========== MAIN ==========-->
     <main class="container">
-      <div class="intro-bg">
+      <div id="inicio" class="intro-bg">
         
           <div class="intro-conteudo container">
             <h1>Transformando a avaliação neurológica da hanseníase no Brasil</h1>
@@ -49,7 +49,7 @@
 
             <div class="intro-botao">
               <button class="conheca">Conheça o ANSd</button>
-              <button class="preview"><img src="./image/icons/Subtract.png">Quero demonstração </button>
+              <button class="preview">Quero demonstração<img src="./image/icons/Subtract.png"></button>
             </div>
           </div>
 
@@ -296,7 +296,7 @@
 
             <div class="s-video-wrap">
                 <div class="s-video-content">
-                  <a href="https://www.youtube.com/watch?v=gT-lns_MNeI" target="_blank" class="popup-video mb-50">
+                  <a href=" https://www.youtube.com/watch?v=AYfV5exAEAQ" target="_blank" class="popup-video mb-50">
                     <span><img src="image/icons/play.svg" alt=""></span>
                   </a>
                 </div>
@@ -364,37 +364,43 @@
     </main>
 
     <!--========== FOOTER ==========-->
-    <footer class="footer-container">
-      <div class="footer-conteudo">
-        <img class="footer-logo" src="./image/logo-footer.png">
-        
-        <div class="footer-colunas">
+   <footer>
+        <div class="footer-container">
 
-            <div class="contatos">
-              <h3>Contatos</h3>
-              <ul class="contato-list">
-                <li><img class="insta" src="./image/icons/insta.png">
-                   <a href="https://www.instagram.com/dotlabbrazil/" target="_blank">@dotlabbrazil</a>
-                  </li>
-                <li><img class="email" src="./image/icons/email.png"> 
-                   <a href="https://www.instagram.com/dot.hansenai/" target="_blank">@dot.hansenai</a>
-                  </li>
-              </ul>
+            <div class="container">
+
+                <div class="footer-img"><img src="./image/logo-footer.png" alt=""></div>
+
+                <div class="footer-listas">
+                    
+                    <div class="footer-colunas contatos">
+                        <h3>Contatos</h3>
+                        <ul>
+                            <li>
+                                <img src="./image/icons/insta.png" alt="">
+                                <a href="https://www.instagram.com/dot.hansenai/" target="_blank">@dot.hansenai</a>
+                            </li> 
+                            <li>
+                                <img src="./image/icons/insta.png" alt="">
+                                <a href="https://www.instagram.com/dotlabbrazil/" target="_blank">@dotlabbrazil</a>
+                            </li> 
+                        </ul>
+                    </div>
+
+                    <div class="footer-colunas Mapa">
+                    <h3>Mapa do Site</h3>
+                        <ul>
+                          <li><a href="#sobre">Sobre</a></li>
+                          <li><a href="#Funcionalidades">Funcionalidades</a></li>
+                          <li><a href="#praquem">Para quem é</a></li>
+                          <li><a href="#hansen.ai">hansen.ai</a></li>
+                        </ul>
+                    </div>
+
             </div>
-
-        <div class="links">
-          <h3>Mapa do Site</h3>
-          <ul class="links-list">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#funcionalidades">Funcionalidades</a></li>
-            <li><a href="#praquem">Para quem é</a></li>
-            <li><a href="#hansen.ai">hansen.ai</a></li>
-            <li><a href="#demonstracao">Demonstração</a></li>
-          </ul>
+            
+            <span>&copy; 2025 ANSd. Todos os direitos reservados.</span>
         </div>
-
-        <span>© 2025 ANSd. Todos os direitos reservados.</span>
-      </div>
     </footer>
 
     <script src="./index.js"></script>

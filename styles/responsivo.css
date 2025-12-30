@@ -31,7 +31,7 @@
     width: 20px;
   }
 
-  .menu-list { 
+  .menu-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -59,7 +59,7 @@
     right: 10px;
     width: 150px;
     height: 200px;
-    
+
     border-radius: 18px;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     animation: slideDown 0.3s ease-out;
@@ -129,21 +129,24 @@
   }
 }
 
-/* ===== MAIN ===== */
+/* ===== MAIN - banner 1 ===== */
 @media (max-width: 1000px) {
   .intro-bg {
     flex-direction: column;
     text-align: start;
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     background-attachment: scroll;
     height: 50rem;
+    width: 100%;
     padding: 20px;
+    position: relative; /* container relativo para posicionamento absoluto da seta */
   }
 
   .intro-conteudo {
+    z-index: 10;
     margin-top: 20px;
     margin-left: -10px;
     display: block;
@@ -154,60 +157,160 @@
   .intro-conteudo h1 {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 20px;
   }
 
   .intro-conteudo p {
     font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* Empilhar botões verticalmente e manter ordem */
+  .intro-botao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    max-width: 100%;
   }
 
   .intro-botao button {
-    width: 150px;
+    width: 250px;
     font-size: 1rem;
+    padding: 10px;
   }
 
-  .intro-logo img {
+  .intro-botao .preview img {
     position: relative;
-    width: 100px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 120px;
-    margin-bottom:120px;
-  }
-
-  .conheca {
-    width: 160px;
-    font-size: 0.9rem;
-    padding: 10px 12px;
-  }
-
-  .preview {
-    width: 160px;
-    font-size: 0.9rem;
-    padding: 10px 12px;
-  }
-
-  .preview img {
-    margin-left: 100px;
-    width: 16px;
-    height: 16px;
-  }
-
-  .moldura-baixo {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-top: 20px;
-  }
-
-  .seta-baixo {
-    position: relative;
-    bottom: auto;
-    right: auto;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 0%;
   }
 
   .intro-logo {
-    margin-right: 0;
-    margin-top: 0;
+    position: absolute;
+    margin-top: 30px;
+    top: 450px;
+    left: 40px;
+    width: 300px;
+    z-index: 50;
+  }
+
+  .intro-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .moldura-baixo {
+    position: absolute;
+    top: auto;
+    bottom: 0px; /* fixa perto do rodapé da intro */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  .seta-baixo {
+    position: absolute;
+    bottom: 20px;
+    left: 53%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/*===== FOOTER =====*/
+@media (max-width: 1000px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: start;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .footer-img {
+    padding: 40px 0 30px 0;
+    text-align: start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-img img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .footer-listas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .footer-listas h3 {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    text-align: start;
+    width: 100%;
+  }
+
+  .footer-colunas {
+    align-items: start;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+  .footer-colunas ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+
+  .footer-colunas ul li {
+    margin: 0;
+  }
+
+  .footer-colunas.Mapa ul li a {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .footer-colunas.contatos ul li {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+  }
+
+  .footer-colunas.contatos ul li img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-colunas.contatos ul li a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .footer-container span {
+    padding: 30px 0 0 0;
+    text-align: start;
+    font-size: 0.8rem;
+    display: block;
   }
 }

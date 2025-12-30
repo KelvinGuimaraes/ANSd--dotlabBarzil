@@ -441,7 +441,7 @@ nav ul li a {
   color: #FFFFFF !important;
   font-size: 1.25rem;
   font-weight: 700;
-  z-index: 2;
+  z-index: 999;
 }
 
 .numero:before {
@@ -451,7 +451,7 @@ nav ul li a {
   height: 33px;
   border-radius: 50%;
   background-color: #623996;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header-card h3 {
@@ -823,98 +823,78 @@ nav ul li a {
 }
 
 /*========== FOOTER ==========*/
-.footer-container {
+footer{
   background-image: url(./image/back-footer.png);
   background-color: var(--cor-primary);
   color: #ffffff;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 698px;
-  margin-left: calc(-50vw + 50%);
-  padding-left: 0;
-  padding-right: 0;
+  width: 100%;
+  padding: 80px 0 40px; /* espaço interno para que o background cubra o conteúdo */
 }
 
-.footer-conteudo {
-  display: flex;
-  flex-direction: column;
+.footer-container span {
+    display: flex;
+    padding: 90px 0 93px 0;
+    font-size: 1.25rem;
+    color: #FFFFFF;
 }
 
-.footer-conteudo img {
-  width: 145px;
-  height: 145px;
+.footer-listas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-listas h3 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.footer-listas ul li a{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.footer-listas ul li a:hover {
+    cursor: pointer;
+    color: #424242;
+}
+
+.footer-img {
+  padding: 40px 0 20px 0;
 }
 
 .footer-colunas {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
 }
 
-.contatos {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
+.footer-colunas ul li {
+    display: flex;
+    margin: 7px 0
 }
 
-.contato-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 20px;
+.contatos ul li a {
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 46px;
+/* Corrige tamanho e proporção das imagens no footer */
+.footer-colunas ul li img,
+.footer-listas ul li img {
+  width: 28px;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
 }
 
-.links-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 30px;
-  gap: 10px;
-}
-
-.contatos, .links h3{
-  font-size: 2rem;
-  font-weight: 700;
-  color: #FFFFFF;
-}
-
-.contato-list li a {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #FFFFFF;
-}
-
-.contato-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.links-list a {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #FFFFFF;
-}
-
-.contato-list .insta{
-  width: 32px;
-  height: 32px;
-}
-
-.contato-list .email{
-  width: 31px;
-  height: 25px;
-}
-
-.footer-conteudo span {
-  display: flex;
-  margin-top: 90px;
+.footer-img img {
+  max-width: 220px;
+  height: auto;
+  display: block;
 }
