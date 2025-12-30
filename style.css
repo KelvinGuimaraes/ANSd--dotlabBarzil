@@ -463,12 +463,9 @@ nav ul li a {
 
 /*========== Pra quem ==========*/
 
-.praq-titulo {
+.praquem h2 {
   display: flex;
   padding: 80px 0px 0px 0px;
-}
-
-.praquem h2 {
   font-size: 2.25rem;
   color: var(--cor-primary);
 }
@@ -706,6 +703,12 @@ nav ul li a {
   margin: 90px 0px;
 }
 
+.carousel-viewport {
+  overflow: hidden;
+  width: 750px;
+  max-width: 800px; /* desktop */
+}
+
 .carousel-container button {
   display: flex;
   justify-content: center;
@@ -721,7 +724,8 @@ nav ul li a {
 .carousel-slide {
   display: flex;
   gap: 40px;
-  border-radius: 12px;
+  transition: transform 0.4s ease;
+  will-change: transform;
 }
 
 .carousel-slide img {
@@ -897,4 +901,10 @@ footer{
   max-width: 220px;
   height: auto;
   display: block;
+}
+
+@media (min-width: 1000px) {
+  .carousel-viewport {
+    max-width: calc((380px * 2) + 40px);
+  }
 }

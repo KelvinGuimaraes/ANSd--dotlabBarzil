@@ -22,6 +22,73 @@ cards.forEach((cardClicado) => {
   });
 });
 
+// ===== CARROSSEL =====
+const slide = document.querySelector(".carousel-slide");
+const images = document.querySelectorAll(".carousel-slide img");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+let index = 0;
+
+function getImagesPerView() {
+  return window.innerWidth < 1000 ? 1 : 2;
+}
+
+function getImageWidth() {
+  const img = images[0];
+  const gap = parseInt(getComputedStyle(slide).gap) || 0;
+  return img.clientWidth + gap;
+}
+
+function getMaxIndex() {
+  return Math.max(0, images.length - getImagesPerView());
+}
+
+function updateCarousel() {
+  const imageWidth = getImageWidth();
+  const maxIndex = getMaxIndex();
+  if (index > maxIndex) index = maxIndex;
+  if (index < 0) index = 0;
+  slide.style.transform = `translateX(-${index * imageWidth}px)`;
+}
+
+next.addEventListener("click", () => {
+  const imagesPerView = getImagesPerView();
+  const maxIndex = getMaxIndex();
+
+  if (index < maxIndex) {
+    index += imagesPerView;
+    if (index > maxIndex) index = maxIndex;
+  } else {
+    // chegou no fim -> voltar ao primeiro (loop)
+    index = 0;
+  }
+
+  updateCarousel();
+});
+
+prev.addEventListener("click", () => {
+  const imagesPerView = getImagesPerView();
+
+  const maxIndex = getMaxIndex();
+
+  if (index > 0) {
+    index -= imagesPerView;
+    if (index < 0) index = 0;
+  } else {
+    // no início -> pular para o último (loop)
+    index = maxIndex;
+  }
+
+  updateCarousel();
+});
+
+window.addEventListener("resize", () => {
+  index = 0; // reseta ao trocar de breakpoint
+  updateCarousel();
+});
+
+
 // MENU RESPONSIVO
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector(".menu-button");
@@ -87,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnVerhansen = document.getElementById("btnVerhansen");
   if (btnVerhansen) {
     btnVerhansen.addEventListener("click", function () {
-      window.open("#", "_blank");
+      window.open("https://hansen.dotlabbrazil.com.br/", "_blank");
     });
   }
 
