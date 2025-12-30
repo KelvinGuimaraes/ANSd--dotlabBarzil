@@ -50,10 +50,14 @@ h2 {
 .menu-list {
   list-style: none;
   display: flex;
+  align-items: center;
+  height: 100%;
   flex-direction: row;
   padding: 29px 0px 0px 15px;
   gap: 23px;
+  transition: 0.4s;
 }
+
 
 nav ul li a {
   font-size: 1.25rem;
@@ -62,10 +66,18 @@ nav ul li a {
 }
 
 .demonstra {
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--cor-primary);
   border-radius: 25px;
+  transition: 0.4s;
+}
+
+.demonstra:hover {
+  background-color: var(--cor-secundary);
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .demonstra a {
@@ -111,6 +123,13 @@ nav ul li a {
   padding: 90px 0px 0px 100px;
 }
 
+.intro-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
 .intro-botao {
   display: flex;
   width: 100%;
@@ -135,9 +154,19 @@ nav ul li a {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 20px 10px 0px 0px;
+  transition: 0.4s;
+}
+
+.conheca:hover {
+  background-color: #a76aa3;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 280px;
   padding: 15px 10px;
   background-color: transparent;
@@ -147,6 +176,18 @@ nav ul li a {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 20px;
+  transition: 0.4s;
+}
+
+.preview:hover {
+  background-color: #ffffff;
+  color: var(--cor-button);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.preview:hover img {
+  filter: invert(39%) sepia(83%) saturate(749%) hue-rotate(246deg) brightness(92%) contrast(87%);
 }
 
 .preview img {
@@ -349,6 +390,12 @@ nav ul li a {
   font-size: 1.25rem;
   font-weight: 600;
   margin-right: 20px;
+  transition: 0.4s;
+}
+
+.hansen:hover {
+  background-color: var(--cor-secundary);
+  transition: 0.4s;
 }
 
 .dotlab {
@@ -362,6 +409,12 @@ nav ul li a {
   font-size: 1.25rem;
   font-weight: 600;
   margin-right: 20px;
+  transition: 0.4s;
+}
+
+.dotlab:hover {
+  background-color: #a76aa3;
+  transition: 0.4s;
 }
 
 .oq-img {
@@ -866,7 +919,7 @@ footer{
 
 .footer-listas ul li a:hover {
     cursor: pointer;
-    color: #424242;
+    color: var(--cor-button);
 }
 
 .footer-img {
