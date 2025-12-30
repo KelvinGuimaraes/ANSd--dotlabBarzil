@@ -193,8 +193,8 @@
     position: absolute;
     margin-top: 30px;
     top: 450px;
-    left: 40px;
-    width: 300px;
+    left: 60px;
+    width: 250px;
     z-index: 50;
   }
 
@@ -222,6 +222,109 @@
     bottom: 20px;
     left: 53%;
     transform: translateX(-50%);
+  }
+}
+
+/*========== Os Obstáculos da Avaliação ==========*/
+@media (max-width: 1000px){
+  .obs-avalia {
+    margin-top: -40px;
+  }
+
+  .obs-intro h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: -10px;
+  }
+
+  .obs-intro p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .cards, .ativo ::before {
+    height: 100px;
+  }
+  .cards, .ativo {
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .card-img img {
+    width: 20px;
+    height: 20px;
+  }
+  .card-img  {
+    width: 110px;
+    height: 50px;
+  }
+
+  .card-titulo {
+    font-size: 1rem;
+  }
+  .card-texto p {
+    font-size: 0.9rem;
+  }
+}
+
+/*===== O que é a ANSd =====*/
+@media (max-width: 1000px) {
+
+  .Oq-ANSd {
+    margin-top: -20px;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .oq-texto {
+    width: 100%;
+    gap: 16px;
+    padding-bottom: 40px; /* remove aquele espaço gigante */
+  }
+
+  .oq-texto h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .oq-texto p {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+
+  .oq-botao {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .oq-botao button {
+    width: 220px;
+    height: auto;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+
+  .oq-img {
+    width: 100%;
+    padding: 20px 0 0;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .oq-img img {
+    width: 350px;
+    max-width: 460px;
+    height: auto;
   }
 }
 

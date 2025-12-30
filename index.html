@@ -11,7 +11,7 @@
     />
 
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/responsivo.css" />
   </head>
 
@@ -48,12 +48,12 @@
             <p>O ANSd moderniza a Avaliação Neurológica Simplificada, preserva dados clínicos essenciais e fortalece o cuidado ao paciente e a tomada de decisão profissional.</p>
 
             <div class="intro-botao">
-              <button class="conheca">Conheça o ANSd</button>
-              <button class="preview">Quero demonstração<img src="./image/icons/Subtract.png"></button>
+              <button id="btnSaibamais" class="conheca">Conheça o ANSd</button>
+              <button id="btnpreview" class="preview">Quero demonstração<img src="./image/icons/Subtract.png"></button>
             </div>
           </div>
 
-          <div class="intro-logo"><img src="/image/ANSD-main.svg" alt=""></div>
+          <div class="intro-logo"><img src="./image/ANSD-main.svg" alt=""></div>
 
           <div class="moldura-baixo">
             <img src="./image/icons/moldura-baixo.svg" alt="">
@@ -114,26 +114,27 @@
           </div>
 
         </div>
-        
+       
         <!--========== O que é a ANSd ==========-->
         <div class="Oq-ANSd container">
 
           <div class="oq-texto">
-              <h2>O que é a ANSd</h2>
-              <p>O ANSd é um aplicativo desenvolvido pelo <bold>dotLAB</bold> dentro do projeto <bold>hansen.ai</bold> para digitalizar de forma completa a Avaliação Neurológica Simplificada. Ele mantém total fidelidade ao protocolo oficial, evita perda de dados e cria registros padronizados que podem ser utilizados por profissionais de saúde, gestores e pacientes.</p>
+            <h2>O que é a ANSd</h2>
+            <p>O ANSd é um aplicativo desenvolvido pelo <bold>dotLAB</bold> dentro do projeto <bold>hansen.ai</bold> para digitalizar de forma completa a Avaliação Neurológica Simplificada. Ele mantém total fidelidade ao protocolo oficial, evita perda de dados e cria registros padronizados que podem ser utilizados por profissionais de saúde, gestores e pacientes.</p>
 
-              <div class="oq-botao">
-                <button class="hansen">hansen.ai</button>
-                <button class="dotlab">dotLab Brazil</button>
-              </div>
+            <div class="oq-botao">
+              <button id="btnhansenai" class="hansen">hansen.ai</button>
+              <button id="btndotlab" class="dotlab">dotLab Brazil</button>
+            </div>
           </div>
 
           <div class="oq-img">
-            <img src="/image/Free_iPhone_11_Pro_Mockup_3 1.png" alt="">
+            <img src="./image/Free_iPhone_11_Pro_Mockup_3 1.png" alt="">
           </div>
         </div>
-      </section>
 
+      </section>
+       
       <!--========== Funcionalidades Principais ==========-->
       <section id="Funcionalidades" class="funcionalidades">
         <h2>Funcionalidades Principais</h2>
@@ -252,7 +253,7 @@
 
         <div class="beneficios-conteudo">
 
-          <img class="simbolo-roxo-1" src="simbolo-roxo-1.svg" alt="">
+          <img class="simbolo-roxo-1" src="./image/simbolo-roxo-1.svg" alt="">
 
           <div class="beneficios-texto">
             <h2>Principais Benefícios do ANSd</h2>
@@ -297,14 +298,14 @@
             <div class="s-video-wrap">
                 <div class="s-video-content">
                   <a href=" https://www.youtube.com/watch?v=AYfV5exAEAQ" target="_blank" class="popup-video mb-50">
-                    <span><img src="image/icons/play.svg" alt=""></span>
+                    <span><img src="./image/icons/play.svg" alt=""></span>
                   </a>
                 </div>
             </div>
 
           </div>
 
-          <img src="simbolo-roxo-2.svg" alt="" class="simbolo-roxo-2">
+          <img src="./image/simbolo-roxo-2.svg" alt="" class="simbolo-roxo-2">
         </div>        
       </section>
 
@@ -318,13 +319,13 @@
         
 
         <div class="carousel-container">
-          <button class="prev-btn"><img src="image/icons/seta-esquerda-app.svg"></button>
+          <button class="prev-btn"><img src="./image/icons/seta-esquerda-app.svg"></button>
           <div class="carousel-slide">
             <img src="./image/telas/tela1.jpeg" alt="tela 1">
             <img src="./image/telas/tela2.jpeg" alt="tela 2">
             <!-- Adicione mais imagens aqui -->
           </div>
-          <button class="next-btn"><img src="image/icons/seta-direita-app.svg"></button>
+          <button class="next-btn"><img src="./image/icons/seta-direita-app.svg"></button>
         </div>
 
         <!-- Exemplo caso use um gif
@@ -347,7 +348,7 @@
             <p>
               O hansen.ai é um projeto de pesquisa desenvolvido pelo dotLAB Brazil, com financiamento do CNPq, por meio da Chamada Pública nº 21/2023 - Estudos Transdisciplinares em Saúde Coletiva.
             </p>
-            <button class="ver-hansen">Ver hansen.ai</button>
+            <button id="btnVerhansen" class="ver-hansen">Ver hansen.ai</button>
           </div>
 
           <div class="hansen-img"><img src="./image/hansenai.png"></div>
@@ -358,7 +359,7 @@
           <h2>Transforme o cuidado da hanseníase no Brasil</h2>
           <p>Solicite uma demonstração e descubra como a digitalização da Avaliação Neurológica Simplificada pode fortalecer o diagnóstico, o acompanhamento e a gestão da hanseníase.</p>
 
-          <button class="solicite">Solicitar demonstração</button>
+          <button id="btnSolicite" class="solicite">Solicitar demonstração</button>
         </div>
       </section>
     </main>
