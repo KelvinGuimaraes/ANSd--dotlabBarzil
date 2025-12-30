@@ -903,7 +903,7 @@ footer{
   display: block;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .carousel-viewport {
     max-width: calc((380px * 2) + 40px);
   }
