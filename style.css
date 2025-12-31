@@ -101,115 +101,99 @@ nav ul li a {
 }
 
 /*========= MAIN ==========*/
-.intro-bg {
-  display: flex;
-  flex-direction: row;
-  background-image: url(./image/back-top.png);
-  background-color: var(--cor-primary);
-  color: #ffffff;
-  background-attachment: fixed;
-  background-size: cover;
+
+.hero-bg {
+  background-color: #623996;
+  background-image: url("./image/banner-hero.png");
+  background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
-  height: 666px;
-  margin-left: calc(-50vw + 50%);
-  padding-left: 0;
-  padding-right: 0;
-  z-index: 1;
+  background-size: cover;
+  padding: 100px 0;
+
+  position: relative;
 }
 
-.intro-conteudo {
-  width: 43%;
-  padding: 90px 0px 0px 100px;
+.hero-bg::after {
+  content: "";
+  position: absolute;
+
+  width: 150px;
+  height: 50px;
+
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+
+  background: url("./image/icons/seta-section.png") center / contain no-repeat;
 }
 
-.intro-texto {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-bottom: 20px;
+.hero-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
 
-.intro-botao {
-  display: flex;
-  width: 100%;
-}
-
-.intro-conteudo h1{
+.hero-elements h1 {
   font-size: 2.5rem;
-  font-weight: 900;
+  color: #fff;
 }
 
-.intro-conteudo p{
-  font-size: 1.5rem;
-}
-
-.conheca {
-  width: 280px;
-  padding: 15px 10px;
-  background-color: var(--cor-button);
-  color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 20px 10px 0px 0px;
-  transition: 0.4s;
-}
-
-.conheca:hover {
-  background-color: #a76aa3;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.preview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  padding: 15px 10px;
-  background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 30px;
-  font-size: 1.25rem;
-  font-weight: 600;
+.hero-elements p {
   margin-top: 20px;
-  transition: 0.4s;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-.preview:hover {
-  background-color: #ffffff;
-  color: var(--cor-button);
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.preview:hover img {
-  filter: invert(39%) sepia(83%) saturate(749%) hue-rotate(246deg) brightness(92%) contrast(87%);
-}
-
-.preview img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
-
-.moldura-baixo {
+.buttons {
   display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 1.25rem;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 858px;
-  left: 700px;
-  bottom: 0;
 }
 
-.seta-baixo {
-  position: absolute;
-  bottom: -10px;
-  right: 53px;
+.buttons a{
+  color: #fff;
+  font-weight: 600;
+}
+
+.buttons .ansd {
+  background: #BE85BB;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.buttons .ansd:hover {
+  background-color: #a76aa3;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.buttons .demo {
+  background: none;
+  box-shadow: inset 0 0 0 3px #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.buttons .demo:hover {
+  background-color: #ffffff33;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.buttons .demo::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+
+  background-image: url("/img/seta-hero.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 
@@ -582,31 +566,15 @@ nav ul li a {
 
 .simbolo-roxo-1 {
   position: absolute;
-  top: 310px;
+  bottom: -99px;
   left: -150px;
 }
 
 .simbolo-roxo-2 {
   position: absolute;
-  bottom: 298px;
+  top: 0px;
   right: -150px;
   z-index: 0;
-}
-
-.beneficios-seta {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.seta-cima {
-  position: absolute;
-  bottom: 20px;
-  right: 49%;
-  z-index: 2;
 }
 
 .beneficios {
@@ -620,6 +588,19 @@ nav ul li a {
   margin-left: calc(-50vw + 50%);
   padding-left: 0;
   padding-right: 0;
+  position: relative;
+}
+
+.beneficios::before {content: "";
+position: absolute;
+
+width: 150px;
+height: 50px;
+left: 50%; 
+top: 0px;
+transform: translateX(-50%) scale(-1);
+
+background: url("./image/icons/seta-section.png") center / contain no-repeat;
 }
 
 .beneficios-texto {
