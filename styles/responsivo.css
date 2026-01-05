@@ -262,24 +262,14 @@ html, body {
 
 /* ===== MAIN - banner 1 ===== */
 @media (max-width: 500px)  {
-  .hero-bg {
-    flex-direction: column;
-    text-align: start;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    background-attachment: scroll;
-    height: 50rem;
-    width: 100%;
-    padding: 20px;
-    position: relative; /* container relativo para posicionamento absoluto da seta */
-  }
+
+  .hero-bg::after {
+  width: 90px;
+  height: 30px;
+}
 
   .hero-elements {
     z-index: 10;
-    margin-top: 20px;
-    margin-left: -10px;
     display: block;
     max-width: 350px;
     width: 100%;
@@ -303,48 +293,27 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: start;
-    max-width: 100%;
-  }
-
-  .buttons button {
-    width: 250px;
+    margin-top: 10px;
     font-size: 1rem;
-    padding: 10px;
+    align-items: center;
   }
 
   .hero-bg img {
     display: block;
     width: 100%;
-    max-width: 300px; /* limita o tamanho máximo da logo */
+    max-width: 200px; /* limita o tamanho máximo da logo */
     height: auto;
     margin: 0 auto;
   }
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
-  .hero-elements {
-    flex-direction: column;
-    text-align: start;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    background-attachment: scroll;
-    height: 50rem;
-    width: 100%;
-    padding: 20px;
-    position: relative; /* container relativo para posicionamento absoluto da seta */
-  }
 
   .hero-elements {
-    z-index: 10;
-    margin-top: 20px;
-    margin-left: -10px;
-    display: block;
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
   }
 
   .hero-elements h1 {
@@ -362,23 +331,16 @@ html, body {
   /* Empilhar botões verticalmente e manter ordem */
   .buttons {
     display: flex;
-    flex-direction: row;
     gap: 10px;
-    align-items: start;
-    max-width: 100%;
-    margin-bottom: -200px;
-  }
-
-  .buttons button {
-    width: 250px;
+    margin-top: 10px;
     font-size: 1rem;
-    padding: 10px;
+    align-items: center;
   }
 
   .hero-elements img {
     display: block;
     width: 100%;
-    max-width: 300px; /* limita o tamanho máximo da logo */
+    max-width: 220px; /* limita o tamanho máximo da logo */
     height: auto;
     margin: 0 auto;
   }
@@ -825,6 +787,11 @@ html, body {
     justify-content: center;
     overflow: hidden;
   }
+
+  .beneficios::before {
+  width: 90px;
+  height: 30px;
+}
 
   .beneficios-conteudo {
     margin-top: -30px;
