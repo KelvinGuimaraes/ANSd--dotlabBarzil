@@ -125,6 +125,7 @@ nav ul li a {
   transform: translateX(-50%);
 
   background: url("./image/icons/seta-section.png") center / contain no-repeat;
+  z-index: 99;
 }
 
 .hero-elements {
@@ -583,16 +584,18 @@ nav ul li a {
   position: relative;
 }
 
-.beneficios::before {content: "";
-position: absolute;
+.beneficios::before {
+  content: "";
+  position: absolute;
 
-width: 150px;
-height: 50px;
-left: 50%; 
-top: 0px;
-transform: translateX(-50%) scale(-1);
+  width: 150px;
+  height: 50px;
+  left: 50%; 
+  top: 0px;
+  transform: translateX(-50%) scale(-1);
 
-background: url("./image/icons/seta-section.png") center / contain no-repeat;
+  background: url("./image/icons/seta-section.png") center / contain no-repeat;
+  z-index: 99;
 }
 
 .beneficios-texto {
@@ -818,7 +821,8 @@ background: url("./image/icons/seta-section.png") center / contain no-repeat;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 180px 0px 100px 0px;
+  margin-top: 95px;
+  margin-bottom: 75px;
   gap: 80px;
 }
 
