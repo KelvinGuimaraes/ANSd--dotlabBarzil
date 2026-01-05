@@ -262,7 +262,7 @@ html, body {
 
 /* ===== MAIN - banner 1 ===== */
 @media (max-width: 500px)  {
-  .intro-bg {
+  .hero-bg {
     flex-direction: column;
     text-align: start;
     display: grid;
@@ -276,7 +276,7 @@ html, body {
     position: relative; /* container relativo para posicionamento absoluto da seta */
   }
 
-  .intro-conteudo {
+  .hero-elements {
     z-index: 10;
     margin-top: 20px;
     margin-left: -10px;
@@ -286,20 +286,20 @@ html, body {
     padding: 10px 20px;
   }
 
-  .intro-conteudo h1 {
+  .hero-elements h1 {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 20px;
   }
 
-  .intro-conteudo p {
+  .hero-elements p {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 20px;
   }
 
   /* Empilhar botões verticalmente e manter ordem */
-  .intro-botao {
+  .buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -307,60 +307,23 @@ html, body {
     max-width: 100%;
   }
 
-  .intro-botao button {
+  .buttons button {
     width: 250px;
     font-size: 1rem;
     padding: 10px;
   }
 
-  .intro-botao .preview img {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    padding: 0%;
-  }
-
-  .intro-logo {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin: -100px auto 0; /* centraliza horizontalmente e mantém deslocamento superior */
-    z-index: 50;
-    max-width: 100%;
-  }
-
-  .intro-logo img {
+  .hero-bg img {
     display: block;
     width: 100%;
     max-width: 300px; /* limita o tamanho máximo da logo */
     height: auto;
     margin: 0 auto;
   }
-
-  .moldura-baixo {
-    position: absolute;
-    top: auto;
-    bottom: 0px; /* fixa perto do rodapé da intro */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-  }
-
-  .seta-baixo {
-    position: absolute;
-    bottom: 20px;
-    left: 53%;
-    transform: translateX(-50%);
-  }
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
-  .intro-bg {
+  .hero-elements {
     flex-direction: column;
     text-align: start;
     display: grid;
@@ -374,7 +337,7 @@ html, body {
     position: relative; /* container relativo para posicionamento absoluto da seta */
   }
 
-  .intro-conteudo {
+  .hero-elements {
     z-index: 10;
     margin-top: 20px;
     margin-left: -10px;
@@ -384,20 +347,20 @@ html, body {
     padding: 10px 20px;
   }
 
-  .intro-conteudo h1 {
+  .hero-elements h1 {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 20px;
   }
 
-  .intro-conteudo p {
+  .hero-elements p {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 20px;
   }
 
   /* Empilhar botões verticalmente e manter ordem */
-  .intro-botao {
+  .buttons {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -406,55 +369,18 @@ html, body {
     margin-bottom: -200px;
   }
 
-  .intro-botao button {
+  .buttons button {
     width: 250px;
     font-size: 1rem;
     padding: 10px;
   }
 
-  .intro-botao .preview img {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    padding: 0%;
-  }
-
-  .intro-logo {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    margin: -100px auto 0; /* centraliza horizontalmente e mantém deslocamento superior */
-    z-index: 50;
-    max-width: 100%;
-  }
-
-  .intro-logo img {
+  .hero-elements img {
     display: block;
     width: 100%;
     max-width: 300px; /* limita o tamanho máximo da logo */
     height: auto;
     margin: 0 auto;
-  }
-
-  .moldura-baixo {
-    position: absolute;
-    top: auto;
-    bottom: 0px; /* fixa perto do rodapé da intro */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-  }
-
-  .seta-baixo {
-    position: absolute;
-    bottom: 20px;
-    left: 53%;
-    transform: translateX(-50%);
   }
 }
 

@@ -196,14 +196,6 @@ nav ul li a {
   background-position: center;
 }
 
-
-.intro-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 200px;
-}
-
 .obs-intro {
   display: flex;
   flex-direction: column;
