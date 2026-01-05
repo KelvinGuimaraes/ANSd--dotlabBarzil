@@ -1078,8 +1078,8 @@ html, body {
 
   .carousel-container button {
     display: flex;
-    width: 50px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .carousel-container img {
     display: flex;
@@ -1129,7 +1129,7 @@ html, body {
 
   .carousel-container button {
     display: flex;
-    width: 50px;
+    width: 40px;
     height: 40px;
   }
   .carousel-container img {
