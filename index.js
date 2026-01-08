@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnSaibamais = document.getElementById("btnSaibamais");
   if (btnSaibamais) {
     btnSaibamais.addEventListener("click", function () {
-      window.location.href = "#";
+      window.location.href = "#sobre";
     });
   }
 
