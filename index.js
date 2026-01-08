@@ -133,7 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnpreview = document.getElementById("btnpreview");
   if (btnpreview) {
     btnpreview.addEventListener("click", function () {
-      window.location.href = "#";
+      const modal = document.getElementById("modalContato");
+      if (modal) {
+        modal.showModal();
+      }
     });
   }
 
@@ -161,7 +164,66 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnSolicite = document.getElementById("btnSolicite");
   if (btnSolicite) {
     btnSolicite.addEventListener("click", function () {
-      window.location.href = "#";
+      const modal = document.getElementById("modalContato");
+      if (modal) {
+        modal.showModal();
+      }
+    });
+  }
+
+  const btnDemo = document.getElementById("btnDemo");
+  if (btnDemo) {
+    btnDemo.addEventListener("click", function (e) {
+      e.preventDefault();
+      const modal = document.getElementById("modalContato");
+      if (modal) {
+        modal.showModal();
+      }
+    });
+  }
+
+  // --- Modal Contato ---
+
+  const closeModal = document.getElementById("closeModal");
+  if (closeModal) {
+    closeModal.addEventListener("click", function () {
+      const modal = document.getElementById("modalContato");
+      if (modal) {
+        modal.close();
+      }
+    });
+  }
+  function showModalMessage(message, type = "success", autoHide = true) {
+    const msgEl = document.getElementById("modalMessage");
+    if (!msgEl) return;
+    msgEl.textContent = message;
+    msgEl.className = "modal-message show " + (type === "success" ? "success" : "error");
+    if (autoHide) {
+      clearTimeout(msgEl._hideTimeout);
+      msgEl._hideTimeout = setTimeout(() => {
+        msgEl.className = "modal-message";
+      }, 4000);
+    }
+  }
+
+  const submitModal = document.getElementById("submitModal");
+  if (submitModal) {
+    submitModal.addEventListener("click", function (e) {
+      e.preventDefault();
+      const form = document.querySelector("#modalContato form");
+      if (form && form.checkValidity()) {
+        showModalMessage("Formulário enviado com sucesso!", "success", false);
+        // Aqui você pode adicionar a lógica real de envio (fetch/XHR)
+        setTimeout(() => {
+          form.reset();
+          const modal = document.getElementById("modalContato");
+          if (modal) modal.close();
+          const msgEl = document.getElementById("modalMessage");
+          if (msgEl) msgEl.className = "modal-message";
+        }, 1200);
+      } else {
+        showModalMessage("Por favor, preencha todos os campos obrigatórios.", "error");
+      }
     });
   }
 });
