@@ -489,6 +489,57 @@ html, body {
   }
 }
 
+@media (min-width: 501px) and (max-width: 700px) {
+  .obs-avalia {
+    margin-top: -40px;
+  }
+
+  .obs-intro h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: -10px;
+  }
+
+  .obs-intro p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .cards, .ativo ::before {
+    height: 100px;
+  }
+  .cards, .ativo {
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .card-img img {
+    width: 20px;
+    height: 20px;
+  }
+  .card-img  {
+    width: 110px;
+    height: 50px;
+  }
+
+  .card-titulo {
+    font-size: 1rem;
+  }
+  .card-texto p {
+    font-size: 0.9rem;
+  }
+}
+
 @media (min-width: 701px) and (max-width: 800px) {
   .obs-avalia {
     margin-top: -40px;
@@ -788,7 +839,57 @@ html, body {
   }
 }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 700px) {
+  .funcionalidades {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: left;
+    margin-top: -50px;
+  }
+
+  .funcionalidades h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .funcion-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card-funcion {
+    max-width: 300px;
+    height: 150px;
+    text-align: start;
+  }
+
+  .card-conteudo{
+    padding: 10px;
+    max-width: 300px;
+    height: 100px;
+  }
+  .card-conteudo p {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  
+  .header-card {
+    align-items: start;
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .header-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
   .funcionalidades {
     flex-direction: column;
     padding: 40px 20px;
@@ -1125,6 +1226,7 @@ html, body {
   .beneficios-texto {
     gap: 20px;
     padding-bottom: 20px;
+    margin-top: 40px;
     text-align: left;
   }
 
@@ -1186,7 +1288,126 @@ html, body {
   }
 }
 
-@media (min-width: 501px) and (max-width: 800px) {
+@media (min-width: 501px) and (max-width: 700px) {
+  /* ===== CONTAINER GERAL ===== */
+  .beneficios {
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    background-attachment: scroll;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .beneficios::before {
+  width: 90px;
+  height: 30px;
+}
+
+  .beneficios-conteudo {
+    margin-top: -30px;
+    position: relative;
+    overflow: hidden; /* evita símbolos vazarem */
+  }
+
+  /* ===== SÍMBOLOS DECORATIVOS ===== */
+  .simbolo-roxo-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;      /* ocupa TODO o background */
+    z-index: 0;
+  }
+
+  .simbolo-roxo-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;      /* ocupa TODO o background */
+    z-index: 0;
+  }
+
+  /* ===== GARANTE CONTEÚDO ACIMA DO FUNDO ===== */
+  .beneficios-texto,
+  .list,
+  .beneficios-seta,
+  .s-video-wrap {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ===== TEXTO ===== */
+  .beneficios-texto {
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .beneficios-texto h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .beneficios-texto p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  /* ===== LISTA ===== */
+  .list {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+  }
+
+  .list-deducao {
+    gap: 25px;
+  }
+
+  .list-topic {
+    width: 100%;
+    padding-left: 30px; 
+    max-width: 300px;
+  }
+
+  .list-topic::before {
+    left: 0;
+    width: 18px;
+    height: 18px;
+  }
+
+  .list-topic::after {
+    left: 8px;
+    top: 18px;
+    height: 110%;
+    width: 3px;
+  }
+
+  .list-topic h3 {
+    font-size: 1.1rem;
+  }
+
+  .list-topic p {
+    font-size: 0.9rem;
+  }
+
+  /* ===== VÍDEO ===== */
+  .s-video-wrap {
+    width: 100%;
+    max-width: 360px;
+    height: 380px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
   /* ===== CONTAINER GERAL ===== */
   .beneficios {
     height: auto;
@@ -1258,6 +1479,7 @@ html, body {
   .beneficios-texto {
     gap: 20px;
     padding-bottom: 20px;
+    margin-top: 50px;
     text-align: left;
   }
 
