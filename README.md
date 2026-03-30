@@ -45,8 +45,6 @@ O projeto foi desenvolvido utilizando tecnologias de **desenvolvimento web front
 
 ---
 
-### Clone o repositório
+## 📃 Direitos
 
-```bash
-git clone https://github.com/KelvinGuimaraes/ANSd--dotlabBarzil.git
-````
+**© Copyright 2025 dotLAB Brazil**
